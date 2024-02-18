@@ -1,8 +1,89 @@
+:root {
+  /*Primary*/
+  --green: hsl(75, 94%, 57%);
+  /*Neutrals*/
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  /*Font sizes*/
+  --paragraph: 0.875rem;
+}
+
+body {
+  background-color: var(--off-black);
+  color: var(--white);
+  font-size: var(--paragraph);
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  background-color: var(--dark-grey);
+  margin: 7.125rem 1.5rem;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.inner-container {
+  margin: 0;
+  padding: 1.5rem 1.3125rem;
+}
+
+img {
+  height: 5.625rem;
+  width: 5.625rem;
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.name {
+  font-size: 1.3125rem;
+  font-weight: 700;
+  margin-top: 1.875rem;
+  margin-bottom: 1.125rem;
+}
+
+.location {
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 1.875rem;
+}
+
+.bio {
+  margin-bottom: 1.125rem;
+}
+
+.social-buttons {
+  padding-left: 0;
+}
+
+li {
+  background-color: var(--grey);
+  list-style: none;
+  font-weight: 600;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--dark-grey);
+  }
+}
+
+/*Footer styles*/
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--green);
 }
-
